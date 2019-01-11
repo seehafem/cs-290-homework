@@ -1,2 +1,4 @@
 This text should only show up in the branch.
 It will require a pull request to merge it with the master.
+
+Now it should be in master.
