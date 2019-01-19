@@ -1,0 +1,38 @@
+table, th, td {
+  border-style: solid;
+}
+
+thead th {
+  font-weight: bold;
+}
+
+tbody th {
+  font-weight: normal;
+  font-style: italic;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: cyan;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: orange;
+}
+
+.outer-content {
+  width: 75%;  
+  margin-top: 20px;
+  padding: 20px;
+  background-color: pink;
+}
+
+.inner-content {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+form {
+  margin-top: 20px
+}
