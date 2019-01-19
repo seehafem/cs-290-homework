@@ -22,13 +22,15 @@ tbody tr:nth-of-type(even) {
 .outer-content {
   width: 75%;  
   margin-top: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: pink;
 }
 
+/* Method for centering used from https://stackoverflow.com/questions/114543/how-to-horizontally-center-a-div */
 .inner-content {
   width: 75%;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   background-color: aquamarine;
 }
