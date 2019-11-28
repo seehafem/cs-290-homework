@@ -1,0 +1,124 @@
+<!---------------------------------------------------------------------
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This is the home page for Dory's Cupcakes. It includes
+reviews, pictures, and brief descriptions of the company. Just to be
+clear, this is made-up. My 3-year-old daughter does not yet have a
+successful bakery.
+---------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title> Dory's Cupcakes </title>
+    <link rel = "stylesheet" href = "mainStyle.css" type = "text/css">
+    <link rel = "stylesheet" href = "homeStyle.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Prevent reformatting when the window size gets small; idea taken from the following source:
+    https://stackoverflow.com/questions/4641436/stop-the-browser-from-pushing-everything-around-when-i-resize -->
+    <div style="min-width: 840px; margin: 0 auto;">
+	
+    <!-- Create header at the top of the webpage -->
+    <section id = "topBanner">
+      <text> DORY'S CUPCAKES </text>
+    </section>
+	
+    <!-- Create horizontal navigation menu for other pages on website -->
+    <!-- Used ideas from https://www.w3schools.com/css/css_navbar.asp -->
+    <section>
+      <ul id = "navMenu">
+        <li class = "navItem">
+          <a href = "index.html" class = "navLink">HOME</a>
+        </li>
+        <li class = "navItem">
+          <a href = "menu.html" class = "navLink">MENU</a>
+        </li>
+        <li class = "navItem">
+          <a href = "events.html" class = "navLink">EVENTS</a>
+        </li>
+        <li class = "navItem">
+          <a href = "orders.html" class = "navLink">ORDERS</a>
+        </li>
+      </ul>
+    </section>
+	
+    <!-- Message at the top of the page -->
+    <h1 class = "messageBanner">Home</h1>
+	
+    <!-- Create a text review -->
+    <section class = "firstLine" id = "textReview">
+      <h1>Look What People Are Saying</h1>
+      <text id = "review"><q>Dory's Cupcakes is the latest, greatest thing to hit the Madison food scene.
+      It is delivering the world pure joy, one cupcake at a time!</q><br />
+      ~ Madtown Baking Magazine ~<br /><br />
+      <q>The frosting is enough to make you weep.</q><br />
+      ~ Lakeside Eateries ~<br /><br />
+      <q>Sweet, delicious, and absolutely breathtaking as well! This is a place that
+      you simply MUST try!</q><br />
+      ~ Eastside Bakerz ~</text>
+    </section>
+	
+    <!-- Create a photo slideshow -->
+    <section class = "firstLine" id = "slideshow">
+      <img class = "photoSlide" src = "Photos/liners.JPG" alt = "Cupcake Liners" id = "firstPhoto">
+      <img class = "photoSlide" src = "Photos/batter2.JPG" alt = "Cupcake Batter">
+      <img class = "photoSlide" src = "Photos/oven.JPG" alt = "Fresh from the Oven">
+      <img class = "photoSlide" src = "Photos/cupcakes1.JPG" alt = "Delicious Cupcakes">
+    </section>
+	
+    <!-- Create an informational section -->
+    <section>
+      <h1 class = "messageBanner">Our Story</h1>
+    </section>
+	
+    <!-- Demonstrate story with pictures and captions -->
+    <figure class = "storyPhotoLine">
+      <img class = "storyPhotos" src = "Photos/mixing.JPG" alt = "Mixing It Up">
+      <figcaption>We come from humble beginnings baking cupcakes in our
+      downstairs cabin. My brother and I would torment our parents
+      forcing them to try new recipe after new recipe, but this
+      drive for perfection is what led to us opening the best bakery
+      on the east side of Madison.</figcaption>
+    </figure>
+    <figure class = "storyPhotoLine">
+      <img class = "storyPhotos" src = "Photos/kitchenAid.JPG" alt = "Kitchen Aid">
+      <figcaption>Our success was fairly unexpected, being only a few
+      years of age and having absolutely no true baking experience.
+      However, after a few successful times selling cupcakes at a stand
+      outside our house, we were offered a bakery of our own, and we
+      turned that bakery into Dory's Cupcakes.</figcaption>
+    </figure>
+    <figure class = "storyPhotoLine">
+      <img class = "storyPhotos" src = "Photos/baker.JPG" alt = "Happy Baker">
+      <figcaption>Our mission is to bring joy to the world one cupcake at
+      a time. We carefully craft every cupcake by hand and use our secret
+      frosting recipe to offer nothing short of a perfect treat to anyone
+      seeking out a delicious escape. Come try them, and see for yourself!</figcaption>
+    </figure>
+	
+    <!-- Create footer at the bottom of the webpage -->
+    <section id = "bottomBanner">
+      <section class = "bannerInfo" id = "contactInfo">
+        <text>Dory's Cupcakes</text> <br />
+    	<text>1234 Dreamer Ln</text> <br />
+    	<text>Disney World, FL 47253</text> <br /> <br />
+    	<text>doryscupcakes@gmail.com</text>
+      </section>
+      <section class = "bannerInfo" id = "bannerLogo">
+        <img src = "https://openclipart.org/download/298325/muffin.svg" alt = "Cherry Cupcake" id = "bottomLogo">
+      </section>
+      <section class = "bannerInfo" id = "outsideLinks">
+        <text>Please support us on the following websites:</text> <br />
+        <a href = "https://www.zomato.com/madison-wi">Zomato</a> <br />
+        <a href = "https://www.yelp.com">Yelp</a> <br />
+        <a href = "https://www.tripadvisor.com">Trip Advisor</a> <br />
+        <a href = "https://www.facebook.com">Facebook</a>
+      </section>
+    </section>
+
+    <script src = "slideshow.js"> </script>
+  </body>
+</html>

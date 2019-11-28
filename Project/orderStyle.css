@@ -1,0 +1,34 @@
+/**********************************************************************
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This contains styles for the order page.
+**********************************************************************/
+.leftColumn {
+  width: 65%;
+  margin: auto;
+  vertical-align: top;
+  display: inline-block;
+  padding: 20px;
+  font: garamond;
+  font-size: 24px;
+  color: #306EFF;
+  border: solid 5px;
+  border-color: #306EFF;
+  background-color: #FFDFDD;
+}
+
+.rightColumn {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-left: 5%;	
+}
+
+.pictures {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  border: solid 5px;
+  border-color: #306EFF;
+}

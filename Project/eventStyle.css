@@ -1,0 +1,53 @@
+/**********************************************************************
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This contains styles for the events page.
+**********************************************************************/
+.photoSlide {
+  display: none;
+  width: 90%;
+  height: 60%;
+  border: solid 5px #306EFF;
+}
+
+#firstPhoto {
+  display: inline-block;
+}
+
+.leftColumn {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin: auto;
+}
+
+.rightColumn {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin: auto;
+}
+
+.scrollBox {
+  overflow: scroll;
+  height: 500px;
+  width: 90%;
+  border: solid 5px;
+  border-color: #306EFF;
+  background-color: #FFDFDD;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#catering {
+  border: solid 5px;
+  border-color: #306EFF;
+  background-color: #FFDFDD;
+  font: garamond;
+  font-size: 24px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: #306EFF;
+}

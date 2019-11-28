@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var apiKey = 'fa7d80c48643dfadde2cced1b1be6ca1';
+
+      document.addEventListener('DOMContentLoaded', bindButtons);
+
+      function bindButtons(){
+		document.getElementById('citySubmit').addEventListener('click', function(event) {
+          var req = new XMLHttpRequest();
+          var info = document.getElementById('cityName').value;
+          req.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=" + info + "&units=imperial&appid=" + apiKey, true);
+          req.addEventListener('load', function(){
+		    if (req.status < 400) {
+		      document.getElementById('err').textContent = "No Errors Occurred";
+		      var response = JSON.parse(req.responseText);
+		      displayInfo(response);
+			}
+			else {
+		      document.getElementById('err').textContent = "An Error Occurred";
+			  clearInfo();
+			}
+          });
+          req.send(null);
+          event.preventDefault();
+		})
+		
+		document.getElementById('zipSubmit').addEventListener('click', function(event) {
+          var req = new XMLHttpRequest();
+          var info = document.getElementById('zipCode').value;
+          req.open("GET", "https://api.openweathermap.org/data/2.5/weather?zip=" + info + "&units=imperial&appid=" + apiKey, true);
+          req.addEventListener('load', function(){
+		    if (req.status < 400) {
+		      document.getElementById('err').textContent = "No Errors Occurred";
+			  var response = JSON.parse(req.responseText);
+		      displayInfo(response);
+			}
+			else {
+		      document.getElementById('err').textContent = "An Error Occurred";
+			  clearInfo();
+			}
+          });
+          req.send(null);
+          event.preventDefault();
+		})
+		
+		function displayInfo(response){
+          document.getElementById('name').textContent = response.name;
+          document.getElementById('long').textContent = response.coord.lon;
+          document.getElementById('latt').textContent = response.coord.lat;
+          document.getElementById('temp').textContent = response.main.temp + " Fahrenheit";
+          document.getElementById('hum').textContent = response.main.humidity;
+        }
+
+		function clearInfo(response){
+          document.getElementById('name').textContent = "N/A";
+          document.getElementById('long').textContent = "N/A";
+          document.getElementById('latt').textContent = "N/A";
+          document.getElementById('temp').textContent = "N/A";
+          document.getElementById('hum').textContent = "N/A";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Weather Request</legend>
+        <label for="cityName">City Name: </label>
+        <input type="text" name="cityName" id="cityName">
+		<input type="submit" id="citySubmit">
+		<br />
+		<br />
+        <label for="zipCode">Zip Code: </label>
+        <input type="text" name="zipCode" id="zipCode">
+		<input type="submit" id="zipSubmit">
+		</fieldset>
+    </form>
+    <div>
+      <h2>Result</h2>
+      <ul>
+        <li><span>City Name: </span><span id="name"></span></li>
+        <li><span>Longitude: </span><span id="long"></span></li>
+        <li><span>Lattitude: </span><span id="latt"></span></li>
+        <li><span>Temperature: </span><span id="temp"></span></li>
+        <li><span>Humidity: </span><span id="hum"></span></li>
+		<br />
+		<li><span>Status Message: </span><span id="err"></span></li>
+      </ul>
+    </div>
+  </body>
+</html>

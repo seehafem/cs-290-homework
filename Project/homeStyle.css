@@ -1,0 +1,49 @@
+/**********************************************************************
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This contains styles for the home page.
+**********************************************************************/
+.firstLine {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 5%;
+  width: 40%;
+}
+
+#textReview {
+  font-style: garamond;
+  font-size: 20px;
+  padding: 25px;
+  color: #306EFF;
+  border: solid 5px;
+  border-color: #306EFF;
+  background-color: #FFDFDD;
+}
+
+.photoSlide {
+  display: none;
+  width: 90%;
+  height: 60%;
+  border: solid 5px #306EFF;
+}
+
+#firstPhoto {
+  display: inline-block;
+}
+
+.storyPhotoLine {
+  vertical-align: top;
+  display: inline-block;
+  width: 29%;
+  margin: 2%;
+}
+
+.storyPhotos {
+  display: inline;
+  width: 90%;
+  height: 60%;
+  border: solid 5px #306EFF;
+}

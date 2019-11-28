@@ -1,0 +1,61 @@
+<!---------------------------------------------------------------------
+Citation:
+Much of this code is similar to the code provided in the lectures.
+It is changed to get weather data, but the basic approach is the same.
+---------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title> Ajax Practice - Michael Seehafer </title>
+  </head>
+  <body>
+      <h1>Weather Search</h1>
+      <form>
+      <fieldset>
+        <legend>Weather Request</legend>
+        <label for="cityName">City Name: </label>
+        <input type="text" name="cityName" id="cityName">
+        <input type="submit" id="citySubmit">
+        <br />
+        <br />
+        <label for="zipCode">Zip Code: </label>
+        <input type="text" name="zipCode" id="zipCode">
+        <input type="submit" id="zipSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Weather Results</h2>
+      <ul>
+        <li><span>City Name: </span><span id="name"></span></li>
+        <li><span>Longitude: </span><span id="long"></span></li>
+        <li><span>Lattitude: </span><span id="latt"></span></li>
+        <li><span>Temperature: </span><span id="temp"></span></li>
+        <li><span>Humidity: </span><span id="hum"></span></li>
+        <br />
+        <li><span>Status Message: </span><span id="err"></span></li>
+      </ul>
+    </div>
+    <h1>Post Data</h1>
+    <form>
+      <fieldset>
+        <legend>Post Data Request</legend>
+        <label for="postText">Text to Post: </label>
+        <input type="text" name="postText" id="postText">
+        <input type="submit" id="postSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Data Post Results</h2>
+      <ul>
+        <li><span>Data: </span><span id="postData"></span></li>
+        <br />
+        <li><span>Status Message: </span><span id="err2"></span></li>
+      </ul>
+    </div>
+
+    <script src = "weatherScript.js"> </script>
+    <script src = "postScript.js"> </script>
+  </body>
+</html>

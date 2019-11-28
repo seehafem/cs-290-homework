@@ -1,0 +1,108 @@
+<!---------------------------------------------------------------------
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This page includes a menu on the screen, images, and a
+menu that can be downloaded as well.
+---------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title> Dory's Cupcakes - Menu </title>
+    <link rel = "stylesheet" href = "mainStyle.css" type = "text/css">
+    <link rel = "stylesheet" href = "menuStyle.css" type = "text/css">
+  </head>
+  <body>
+    <!-- Prevent reformatting when the window size gets small; idea taken from the following source:
+    https://stackoverflow.com/questions/4641436/stop-the-browser-from-pushing-everything-around-when-i-resize -->
+    <div style="min-width: 840px; margin: 0 auto;">
+  
+    <!-- Create header at the top of the webpage -->
+    <section id = "topBanner">
+      <text> DORY'S CUPCAKES </text>
+    </section>
+	
+    <!-- Create horizontal navigation menu for other pages on website -->
+    <!-- Used ideas from https://www.w3schools.com/css/css_navbar.asp -->
+    <section>
+      <ul id = "navMenu">
+        <li class = "navItem">
+          <a href = "index.html" class = "navLink">HOME</a>
+        </li>
+        <li class = "navItem">
+          <a href = "menu.html" class = "navLink">MENU</a>
+        </li>
+        <li class = "navItem">
+          <a href = "events.html" class = "navLink">EVENTS</a>
+        </li>
+        <li class = "navItem">
+          <a href = "orders.html" class = "navLink">ORDERS</a>
+        </li>
+      </ul>
+    </section>
+	
+    <!-- Message at the top of the page -->
+    <h1 class = "messageBanner">Menu</h1>
+	
+    <!-- Create a menu -->
+    <section class = "menuSections" id = "menuSection1">
+      <h1 class = "heading">Check Out Our Flavors</h1>
+      <ul>
+        <li>Double Chocolate Chip</li>
+        <li>Banana Split</li>
+        <li>Vanilla Bean</li>
+        <li>Cherry Cheesecake</li>
+        <li>Blueberry Twist</li>
+        <li>Raspberry Rainbow</li>
+        <li>Cotton Candy</li>
+        <li>Caramel Fudge</li>
+      </ul>
+    </section>
+	
+    <!-- Create pricing information -->
+    <section class = "menuSections" id = "menuSection2">
+      <section id = "pricingInfo">
+        <h1 class = "heading">Pricing Info</h1>
+        <ul>
+          <li>Single:     $1.50</li>
+          <li>Half-Dozen: $6.00</li>
+          <li>Dozen:      $9.00</li>
+        </ul>
+      </section>
+      <section id = "menuImage">
+        <img src = "Photos/cupcakes3.JPG" alt = "Cupcakes" id = "menuPhoto">
+      </section>
+    </section>
+	
+    <!-- Create an image that allows for a menu downloaded when clicked -->
+    <section class = "menuSections" id = "menuSection3">
+      <text>Download menu by clicking below:</text><br />
+      <a href = "CupcakeMenu.pdf" download>
+        <img src = "https://openclipart.org/download/171822/sign.svg" alt = "Menu" id = "menuIcon">
+      </a>
+    </section>
+	
+	
+    <!-- Create footer at the bottom of the webpage -->
+    <section id = "bottomBanner">
+      <section class = "bannerInfo" id = "contactInfo">
+        <text>Dory's Cupcakes</text> <br />
+        <text>1234 Dreamer Ln</text> <br />
+        <text>Disney World, FL 47253</text> <br /> <br />
+        <text>doryscupcakes@gmail.com</text>
+      </section>
+      <section class = "bannerInfo" id = "bannerLogo">
+        <img src = "https://openclipart.org/download/298325/muffin.svg" alt = "Cherry Cupcake" id = "bottomLogo">
+      </section>
+      <section class = "bannerInfo" id = "outsideLinks">
+        <text>Please support us on the following websites:</text> <br />
+        <a href = "https://www.zomato.com/madison-wi">Zomato</a> <br />
+        <a href = "https://www.yelp.com">Yelp</a> <br />
+        <a href = "https://www.tripadvisor.com">Trip Advisor</a> <br />
+        <a href = "https://www.facebook.com">Facebook</a>
+      </section>
+    </section>
+  </body>
+</html>

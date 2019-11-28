@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var req = new XMLHttpRequest();
+      req.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Corvallis,us-or&appid=fa7d80c48643dfadde2cced1b1be6ca1", false);
+      req.send(null);
+      console.log(JSON.parse(req.responseText));
+	  
+	  var req2 = new XMLHttpRequest();
+      req2.open("POST", "https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCqsdHEZP_aLeoCvd3NRydLpUT9vab1KTw", false);
+      req2.setRequestHeader('Content-Type', 'application/json');
+      req2.send('{"longUrl":"http://www.google.com"}');
+      console.log(JSON.parse(req2.responseText));
+	  
+	  req.open("GET", "https://www.googleapis.com/urlshortener/v1/url?shortUrl=http://goo.gl/fbsS", false);
+	  req.send(null);
+	  console.log(JSON.parse(req.responseText));
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

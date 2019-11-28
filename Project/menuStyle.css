@@ -1,0 +1,67 @@
+/**********************************************************************
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This contains styles for the menu page.
+**********************************************************************/
+.heading {
+  font: garamond;
+  color: #306EFF;
+  font-size: 28px;
+  text-align: center;
+  margin: 5px;
+}
+
+.menuSections {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 5%;
+  font: garamond;
+  font-size: 20px;
+  color: #306EFF;
+  width: 25%;
+}
+
+#menuSection1 {
+  background-color: #FFDFDD;
+  border: solid 5px #306EFF;
+  padding: 1%;
+}
+
+#menuSection2 {
+  width: 30%;
+}
+
+#pricingInfo {
+  background-color: #FFDFDD;
+  border: solid 5px #306EFF;
+  display: inline-block;
+  padding-top: 1%;
+  width: 100%;
+}
+
+#menuSection3 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+#menuIcon {
+  display: inline-block;
+  width: 80%;
+  margin: 5%;
+}
+
+#menuImage {
+  display: inline-block;
+  margin-top: 5%;
+  width: 100%;
+}
+
+#menuPhoto {
+  width: 100%;
+  border: solid 5px #306EFF;
+}

@@ -1,0 +1,29 @@
+body {
+  font-family: georgia;
+}
+
+h1 {
+  text-align: center;
+  background-color: #b8f291;
+  padding: 5px;
+}
+
+legend {
+  font-size: 20px;
+  color: green;
+}
+
+input {
+  margin: 5px;
+}
+
+table, tr, th, td {
+  border: black solid 1px;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}

@@ -1,0 +1,105 @@
+/**********************************************************************
+Project: Dory's Cupcakes
+Author: Mike Seehafer
+Date: 3/3/2019
+Description: This contains styles common to all pages for the project.
+**********************************************************************/
+body {
+  background-color: #BCF5A9;
+  font: garamond 20px;
+  color: #306EFF;
+}
+
+#topBanner {
+  background-color: #FFDFDD;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #306EFF;
+  text-shadow: 3px 2px green;
+  font-size: 50px;
+  border-top: solid 5px;
+  border-bottom: solid 5px;
+  border-color: #306EFF;
+  margin-bottom: 25px;
+}
+
+#navMenu {
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: #306EFF;
+  border-top: solid 5px #FFDFDD;
+  border-bottom: solid 5px #FFDFDD;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  display: block;
+  color: #FFDFDD;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: #716589;
+}
+
+.navItem {
+  float: left;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.messageBanner {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  background-color: #FFDFDD;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-top: solid 5px #306EFF;
+  border-bottom: solid 5px #306EFF;
+}
+
+#bottomBanner {
+  background-color: #FFDFDD;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: solid 5px;
+  border-bottom: solid 5px;
+  border-color: #306EFF;
+  margin-top: 25px;
+}
+
+#bottomLogo {
+  height: 100px;
+  width: 100px;
+}
+
+.bannerInfo {
+  display: inline-block;
+  width: 33%;
+  font-style: garamond;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: #306EFF;
+}
+
+figcaption {
+  font-style: garamond;
+  font-size: 20px;
+  padding: 5%;
+  width: 80%;
+  text-align: center;
+  color: #306EFF;
+  border: solid 5px;
+  border-color: #306EFF;
+  background-color: #FFDFDD;
+}

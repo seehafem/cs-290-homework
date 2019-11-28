@@ -1,0 +1,38 @@
+<!-- Heading to separate out this section -->
+<h1>Adding New Entries to the Table</h1>
+
+<!-- Form for adding a new entry to the table -->
+<form>
+  <fieldset id = "newEntry">
+    <legend>Add a New Entry</legend>
+    <label for="name">Name of Exercise: </label>
+    <input type="text" name="name" id="name"> <br />
+    <label for="reps">Reps: </label>
+    <input type="number" name="reps" id="reps"> <br />
+    <label for="weight">Weight: </label>
+    <input type="number" name="weight" id="weight"> <br />
+    <label for="date">Date: </label>
+    <input type="date" name="date" id="date"> <br />
+    <label for="unit">Units (lbs or kg): </label>
+    <input type="radio" name="lbs" value="1" checked="checked" id ="lbs"> LBS</input>
+    <input type="radio" name="lbs" value="0" id="kg"> KG</input> <br /> <br />
+    <input type="submit" id="submitEntry" value ="Submit Entry">
+  </fieldset>
+</form>
+
+<!-- Heading to separate out the second section -->
+<h1>Information in the Table</h1>
+	
+<!-- Generate table from database -->
+<div id = "tableDiv">
+  <table id = "table">
+    <tr>
+      <th>Name</th>
+      <th>Reps</th>
+      <th>Weight</th>
+      <th>Date</th>
+      <th>Unit</th>
+      <th>Options</th>
+    </tr>
+  </table>
+</div>
